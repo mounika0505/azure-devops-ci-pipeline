@@ -16,8 +16,8 @@ stages:
          # Task-1: Build Docker Image and push to Azure Container Registry ACR
          - task: Docker@2
            inputs:
-             containerRegistry: 'manual-devops-acr-svc'
-             repository: 'app1'
+             containerRegistry: 'azureaksregister'
+             repository: 'aksapp1'
              command: 'buildAndPush'
              Dockerfile: '**/Dockerfile'
              tags: 
